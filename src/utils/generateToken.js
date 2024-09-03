@@ -10,7 +10,7 @@ const generateAccessToken = (id) => {
 
 const generateRefreshToken = (id) => {
   return jwt.sign({ id }, process.env.REFRESH_TOKEN_SECRET, {
-    expiresIn: '14d', // Longer lifespan for refresh token
+    expiresIn: '14d', 
   });
 };
 
